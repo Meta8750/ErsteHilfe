@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 167, 109);
+    
+    font-family:Arial, Helvetica, sans-serif;
+    transition: background-color 0.5s ease;
+    box-sizing: border-box;
+    font-size: 19px;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.grid-container{
+    display:grid  !important;
+    grid-template-columns: 38% 1fr 1fr 1fr 1fr;
+    grid-template-rows:0fr 0fr;
+    grid-template-areas: 
+        "sidebar main main2 main3 main4"
+        "sidebar info2 info2 info2 info2";
+    
+    padding: 0 0 0 0px;
+    margin: 0 0 0 0;
+    border: solid 10px white;
+    border-right: solid 0px;
+}
+
+
+/* Beispiel für das Anpassen des Aussehens der ungeordneten Liste */
+ul {
+    text-decoration: dotted;
+}
+
+
+main {
+    grid-area: main; 
+    display: grid;
+    background: rgb(0, 167, 109);
+    margin: 0 0 0 0;
+    min-width: 100%;
+}
+#main1 {
+    
+    min-width: 100%
+}
+
+#main2 {
+    
+    grid-area: main2;
+    min-width: 100%
+}
+
+#main3 {
+    
+    grid-area: main3;
+    min-width: 100%
+    
+}
+
+#main4 {
+    
+    grid-area: main4;
+    min-width: 100%
+    
+}
+
+main div {
+
+    padding: 0% 2% 0% 2%;
+}
+
+
+main p {
+    margin: 0 0 0 0;
+    padding: 1px 10px 1px 10px;
+    width: 2%;
+    color: white;
+    text-align: right;
+    
+ }
+
+
+aside {
+    grid-area: sidebar;
+    
+}
+
+header {
+    grid-column: 1 / 3;
+    grid-area: header;
+    color: white;
+    height: 0;
+}
+
+
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    align-items: flex-start;
+    margin: 1px 1px 0 10px ;
+}
+
+div h1 {
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 0 0 1px 1px;
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+
+li  {
+    width: 85.9%;
+    padding: 3px 0 3px 0;
+    margin: 0 0 0 0;
+    text-align: left;
+    
+    
+}
+
+abbr {
+    position: relative; 
+    left: -12px;
+}
+
+span {
+    color: red;
+    position: relative; 
+    left: -12px;
+}
+
+ul {
+    padding: 0.5px 0 0.5px 0;
+    margin: 0;
+    width: 26%;
+    text-align: right;
+    
+}
+
+img{
+    width: 100%;
+    padding: 0 0 0 0; 
+ }
+
+#info2 {
+    grid-area: info2;
+}
+
+#info {
+    grid-area: sidebar;
+    display: flex;
+    margin: 12% 0 0 0;
+    grid-row: 2;
+}
+ 
+#info  ul {
+    position: relative;
+    width: 23%;
+    right: 0px;
+    margin: 0 0 0 0;
+
+}
+
+#info  p {
+    width: 72.5%;
+    text-align: left;
+    margin: 0 0 0 0;
+}
+
+
+
+
+#AV {
+    grid-column: 1;
+    grid-row: 1;
+}
+#AZ {
+    grid-column: 1;
+    grid-row: 2;
+}
+#DM {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#EK {
+    grid-column: 1;
+    grid-row: 4;
+}
+#GF {
+    grid-column: 1;
+    grid-row: 5;
+}
+#GIG {
+    grid-column: 1;
+    grid-row: 6;
+} 
+
+#IN {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#IT {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#L {
+    display: none;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#LW {
+    grid-column: 1;
+    grid-row: 4;
+} 
+
+#MF {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+#P {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+#PM {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#PW {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#QS {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#QW {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#RM {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+#RW {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+#S {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#T {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#V {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#VZ {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#info2_1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#info2_2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#info2_3 {
+    grid-column: 3;
+    grid-row: 1;
+}
